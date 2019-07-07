@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<annual_balance_percentile &le; 75.0<br/>entropy = 0.513<br/>samples = 70<br/>value = [8, 62]<br/>class = healthy>, fillcolor="#53aae8"] ;
+1 [label=<entropy = 0.0<br/>samples = 57<br/>value = [0, 57]<br/>class = healthy>, fillcolor="#399de5"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<annual_salary_percentile &le; 40.0<br/>entropy = 0.961<br/>samples = 13<br/>value = [8, 5]<br/>class = unhealthy>, fillcolor="#f5d0b5"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label=<entropy = 0.0<br/>samples = 4<br/>value = [4, 0]<br/>class = unhealthy>, fillcolor="#e58139"] ;
+2 -> 3 ;
+4 [label=<annual_salary_percentile &le; 75.0<br/>entropy = 0.991<br/>samples = 9<br/>value = [4, 5]<br/>class = healthy>, fillcolor="#d7ebfa"] ;
+2 -> 4 ;
+5 [label=<entropy = 0.0<br/>samples = 4<br/>value = [0, 4]<br/>class = healthy>, fillcolor="#399de5"] ;
+4 -> 5 ;
+6 [label=<annual_spending_percentile &le; 65.0<br/>entropy = 0.722<br/>samples = 5<br/>value = [4, 1]<br/>class = unhealthy>, fillcolor="#eca06a"] ;
+4 -> 6 ;
+7 [label=<entropy = 0.0<br/>samples = 4<br/>value = [4, 0]<br/>class = unhealthy>, fillcolor="#e58139"] ;
+6 -> 7 ;
+8 [label=<entropy = 0.0<br/>samples = 1<br/>value = [0, 1]<br/>class = healthy>, fillcolor="#399de5"] ;
+6 -> 8 ;
+}
